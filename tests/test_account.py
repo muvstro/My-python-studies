@@ -10,7 +10,7 @@ log = logging.getLogger('my-even-logger')
 
 @pytest.mark.parametrize("login,password,password2", [("login", "valid_password", "valid_password")])
 def test_account(login, password, password2):
-    child = pexpect.spawn('python ../account.py')
+    child = pexpect.spawn('python ./account.py')
     child.logfile = sys.stdout.buffer
     while True:
         i = child.expect(['.*username.*', '.*again.*', '.*password'], timeout=TIMEOUT)
