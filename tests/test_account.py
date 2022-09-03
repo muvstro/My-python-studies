@@ -1,12 +1,9 @@
 import pytest
 import pexpect
 import pytest
-import logging
 import sys
 
 TIMEOUT = 1
-logging.basicConfig(level=logging.DEBUG)
-log = logging.getLogger('my-even-logger')
 
 @pytest.mark.parametrize("login,password,password2", [("login", "valid_password", "valid_password")])
 def test_account(login, password, password2):
