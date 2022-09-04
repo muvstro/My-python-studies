@@ -1,0 +1,6 @@
+Enter username: login
+login
+Enter password: valid_password
+valid_password
+Password for user login set
+Enter a password again: valid_password
